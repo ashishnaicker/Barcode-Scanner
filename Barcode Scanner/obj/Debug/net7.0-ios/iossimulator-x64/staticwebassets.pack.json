@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\GitHub\\Barcode Scanner\\Barcode Scanner\\wwwroot\\history.html",
+      "PackagePath": "staticwebassets\\history.html"
+    },
+    {
+      "Id": "D:\\GitHub\\Barcode Scanner\\Barcode Scanner\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.Barcode Scanner.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.build.Barcode Scanner.props",
+      "PackagePath": "build\\Barcode Scanner.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildMultiTargeting.Barcode Scanner.props",
+      "PackagePath": "buildMultiTargeting\\Barcode Scanner.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildTransitive.Barcode Scanner.props",
+      "PackagePath": "buildTransitive\\Barcode Scanner.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

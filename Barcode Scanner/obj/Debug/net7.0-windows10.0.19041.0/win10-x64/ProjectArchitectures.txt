@@ -1,0 +1,1 @@
+D:\GitHub\Barcode Scanner\Barcode Scanner\Barcode Scanner.csproj;x64
