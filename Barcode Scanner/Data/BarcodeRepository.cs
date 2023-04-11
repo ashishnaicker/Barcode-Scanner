@@ -5,12 +5,12 @@ namespace Barcode_Scanner.Data
 {
     public class BarcodeRepository
     {
-        string _dbPath;
+        readonly string _dbPath;
         SQLiteAsyncConnection _connection;
 
         public string StatusMessage { get; set; }
 
-        private async Task Init()
+        private async Task InitAsync()
         {
             if (_connection != null)
                 return;
@@ -24,18 +24,17 @@ namespace Barcode_Scanner.Data
             _dbPath = dbPath;
         }
 
-        public async Task AddNewBarcode(string format, string value, string dateScanned)
+        public async Task AddNewBarcodeAsync(string format, string value, string dateScanned)
         {
             int result = 0;
             try
             {
-                await Init();
+                await InitAsync();
 
                 await _connection.ExecuteAsync("DELETE FROM barcodes WHERE Value = ?", value);
 
                 result = await _connection.InsertAsync(new Barcode
                 {
-                    Id = Guid.NewGuid(),
                     Format = format,
                     Value = value,
                     DateScanned = dateScanned
@@ -53,7 +52,7 @@ namespace Barcode_Scanner.Data
         {
             try
             {
-                await Init ();
+                await InitAsync();
                 return await _connection.Table<Barcode>().ToListAsync();
             }
             catch (Exception ex)
@@ -61,6 +60,35 @@ namespace Barcode_Scanner.Data
                 StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
             }
             return new List<Barcode>();
+        }
+
+        public async Task<int> DeleteBarcodeAsync(int id)
+        {
+            try
+            {
+                await InitAsync();
+
+                Barcode barcodeToDelete = await _connection.GetAsync<Barcode>(id);
+                return await _connection.DeleteAsync(barcodeToDelete);
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to delete data. {0}", ex.Message);
+            }
+            return 0;
+        }
+
+        public async Task<int> DropTableAsync()
+        {
+            try
+            {
+				return await _connection.DropTableAsync<Barcode>();
+			}
+            catch (Exception ex)
+            {
+                StatusMessage = $"Failed to drop table. {ex.ToString()}";
+            }
+            return 0;
         }
     }
 }

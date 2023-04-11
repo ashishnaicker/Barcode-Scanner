@@ -31,7 +31,7 @@ namespace Barcode_Scanner
                     barcodeGenerator.Format = first.Format;
                     barcodeGenerator.Value = first.Value;
 
-                    await App.BarcodeRepository.AddNewBarcode(first.Format.ToString(), first.Value, DateTime.Now.ToString());
+                    await App.BarcodeRepository.AddNewBarcodeAsync(first.Format.ToString(), first.Value, DateTime.Now.ToString());
                     NotificationLabel.Text = App.BarcodeRepository.StatusMessage;
                 });
             }

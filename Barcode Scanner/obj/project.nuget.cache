@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QbAhKLJ+X6wTeRHUTsAHidkU2Rva8w/TU42/Om6YnPixyu+X7n19UQeFyWNl6psX0dciNDw6nVxrYvKBaDq4xQ==",
+  "dgSpecHash": "3MrlYylAd+umAYnBtRSTa+bwPRQI4JrKw2kWY0fVjBFnoxpek/DvC/0jYqGPzi8/G51n3BUofGocql5andZkVQ==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Barcode Scanner\\Barcode Scanner\\Barcode Scanner.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ashis\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\microsoft.aspnetcore.components.7.0.0.nupkg.sha512",

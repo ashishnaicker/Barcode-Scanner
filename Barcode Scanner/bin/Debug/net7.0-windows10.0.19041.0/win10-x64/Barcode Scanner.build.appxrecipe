@@ -604,6 +604,9 @@
     <AppxPackagedFile Include="C:\Users\ashis\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.28\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ashis\.nuget\packages\csvhelper\30.0.1\lib\net6.0\CsvHelper.dll">
+      <PackagePath>CsvHelper.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ashis\.nuget\packages\microsoft.aspnetcore.authorization\7.0.0\lib\net7.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
     </AppxPackagedFile>
@@ -780,6 +783,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\app.css">
+      <PackagePath>wwwroot\css\app.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\bootstrap\bootstrap.min.css">
+      <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\bootstrap\bootstrap.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
+      <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
+      <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
+      <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
+      <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
+      <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
+      <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\FONT-LICENSE">
+      <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\ICON-LICENSE">
+      <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\css\open-iconic\README.md">
+      <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\favicon.ico">
+      <PackagePath>wwwroot\favicon.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\Barcode Scanner\Barcode Scanner\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>

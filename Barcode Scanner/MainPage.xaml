@@ -1,8 +1,9 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+    xmlns:local="clr-namespace:Barcode_Scanner"
 	x:Class="Barcode_Scanner.MainPage"
-	BackgroundColor="#000000">
+	BackgroundColor="{DynamicResource PageBackgroundColor}">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="HistoryToolbarItem" Text="History" Clicked="HistoryToolbarItem_Clicked" />
@@ -49,5 +50,7 @@
     </Grid>
 
     
+
+
 
 </ContentPage>

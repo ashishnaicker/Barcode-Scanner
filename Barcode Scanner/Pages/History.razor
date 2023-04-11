@@ -1,5 +1,136 @@
-﻿<h3>History</h3>
+﻿@using Barcode_Scanner.Data;
+@using Barcode_Scanner.Models;
+@using CsvHelper;
+@using System.Globalization;
+@using System.Net.Http
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.JSInterop
+
+<div class="page">
+	<main>
+		<article class="content px-4">
+
+            <p style="color: red;">@ErrorMessage</p>
+
+            @if (barcodes.Count() == 0)
+            {
+                <div class="alert alert-primary" role="alert">
+                    No barcodes here...
+                </div>
+            }
+            else
+            {
+                @foreach (Barcode barcode in this.barcodes)
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <p><strong>Date Scanned: </strong>@barcode.DateScanned</p>
+                            <p><strong>Format: </strong>@barcode.Format</p>
+                            <p><strong>Value: </strong>@barcode.Value</p>
+                            <a href="" @onclick="@(e => RemoveBarcode(barcode.Id))">Remove this barcode</a>
+                        </div>
+                    </div>
+                }
+            }
+
+            <button class="btn btn-primary" @onclick="EmailBarcodes">Email Barcodes</button>
+            <button class="btn btn-danger" @onclick="ClearBarcodes">Clear Barcodes</button>
+		</article>
+	</main>
+</div>
+
 
 @code {
 
+    private List<Barcode> barcodes = new List<Barcode>();
+    private string ErrorMessage;
+    private string dbPath = Path.Combine(FileSystem.AppDataDirectory, "barcodes.db3");
+    private BarcodeRepository barcodeRepository;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            this.barcodeRepository = new BarcodeRepository(this.dbPath);
+            await LoadBarcodes();
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.ToString();
+        }
+    }
+
+    private async Task LoadBarcodes()
+    {
+        this.barcodes = await barcodeRepository.GetAllBarcodes();
+    }
+
+    private void EmailBarcodes()
+    {
+        try
+        {
+            //save as csv
+            using (var writer = new StreamWriter(Path.Combine(FileSystem.AppDataDirectory, "barcodes.csv")))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            {
+                csv.WriteRecords(this.barcodes);
+            }
+
+            //email csv
+            if (Email.Default.IsComposeSupported)
+            {
+
+                string subject = "Barcodes";
+                string body = "";
+                string[] recipients = new string[] { };
+
+                var message = new EmailMessage
+                    {
+                        Subject = subject,
+                        Body = body,
+                        BodyFormat = EmailBodyFormat.PlainText,
+                        To = new List<string>(recipients)
+                    };
+
+                string csvPath = Path.Combine(FileSystem.AppDataDirectory, "barcodes.csv");
+
+                message.Attachments.Add(new EmailAttachment(csvPath));
+
+                Email.Default.ComposeAsync(message);
+            }
+        } 
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.ToString();    
+        }
+    }
+
+    private async void RemoveBarcode(int Id)
+    {
+        try
+        {
+            await barcodeRepository.DeleteBarcodeAsync(Id);
+            await LoadBarcodes();
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.ToString();
+        }
+    }
+
+    private async void ClearBarcodes()
+    {
+        try
+        {
+            await barcodeRepository.DropTableAsync();
+            await LoadBarcodes();
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = ex.ToString();
+        }
+    }
 }
