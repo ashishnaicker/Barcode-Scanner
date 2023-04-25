@@ -33,6 +33,8 @@ namespace Barcode_Scanner
 
                     await App.BarcodeRepository.AddNewBarcodeAsync(first.Format.ToString(), first.Value, DateTime.Now.ToString());
                     NotificationLabel.Text = App.BarcodeRepository.StatusMessage;
+
+                    await DisplayAlert("Barcode Scanner", App.BarcodeRepository.StatusMessage, "OK");
                 });
             }
         }

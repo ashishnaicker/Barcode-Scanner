@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3MrlYylAd+umAYnBtRSTa+bwPRQI4JrKw2kWY0fVjBFnoxpek/DvC/0jYqGPzi8/G51n3BUofGocql5andZkVQ==",
+  "dgSpecHash": "jADR5zEq/AhW0xBv0Sw873k4YsIvXTRPOlPgB+1sj9tS7AgnroQQOzMgYVQK57hKZUreXfHnOpAStLP7c6f5Tg==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Barcode Scanner\\Barcode Scanner\\Barcode Scanner.csproj",
   "expectedPackageFiles": [
@@ -31,12 +31,8 @@
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.extensions.logging.debug\\7.0.0\\microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.4\\microsoft.graphics.win2d.1.0.4.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.jsinterop\\7.0.0\\microsoft.jsinterop.7.0.0.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\microsoft.maui.graphics\\7.0.59\\microsoft.maui.graphics.7.0.59.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.59\\microsoft.maui.graphics.win2d.winui.desktop.7.0.59.nupkg.sha512",
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
@@ -138,11 +134,7 @@
     "C:\\Users\\ashis\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512",
     "C:\\Users\\ashis\\.nuget\\packages\\zxing.net.maui\\0.3.0-preview.1\\zxing.net.maui.0.3.0-preview.1.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\zxing.net.maui.controls\\0.3.0-preview.1\\zxing.net.maui.controls.0.3.0-preview.1.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.4\\microsoft.aspnetcore.app.runtime.win-x64.7.0.4.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.4.nupkg.sha512",
-    "C:\\Users\\ashis\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.4\\microsoft.netcore.app.runtime.win-x64.7.0.4.nupkg.sha512"
+    "C:\\Users\\ashis\\.nuget\\packages\\zxing.net.maui.controls\\0.3.0-preview.1\\zxing.net.maui.controls.0.3.0-preview.1.nupkg.sha512"
   ],
   "logs": []
 }

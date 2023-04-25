@@ -61,6 +61,10 @@
         {
             ErrorMessage = ex.ToString();
         }
+        finally
+        {
+
+        }
     }
 
     private async Task LoadBarcodes()
@@ -131,6 +135,10 @@
         catch (Exception ex)
         {
             ErrorMessage = ex.ToString();
+        }
+        finally
+        {
+
         }
     }
 }
